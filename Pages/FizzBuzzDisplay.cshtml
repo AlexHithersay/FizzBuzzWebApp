@@ -1,0 +1,23 @@
+﻿@page "/"
+@model FizzBuzzDisplayModel
+@{
+    
+}
+<br/>
+<table class="FizzBuzzTable">
+    <thead>
+        <tr>
+            <th>Database contents</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var entry in Model.tableEntries)
+        {
+            <tr>
+                <td>@entry</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
